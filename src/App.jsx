@@ -16,7 +16,7 @@ function App() {
   
   const getRecipes = async () => {
     const response = await axios.get(BASE_URL);
-    setRecipes(response.data.hits);
+    setRecipes(response.data.hits); // you can only call set state function once for each state
     console.log(data);
   }
 
