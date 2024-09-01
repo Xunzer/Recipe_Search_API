@@ -2,4 +2,15 @@
 ## [Please click here to access the site.](https://recipe-searching-api.web.app)
 #### A website built with React.js that lets you search for recipes and their ingredients using the Edamam Recipe Search API.
 
---WIP
+### The goal of this project is to explore concepts related to:
+- React.js
+- HTML
+- CSS
+- API fetching
+
+### By applying:
+- Axios (for fetching data)
+- React.js Hooks (State and Effect)
+- Asynchronous control flow (async and await)
+- JSX, HTML, CSS, components, props, CSS modules, etc.
+- Google Firebase Hosting
