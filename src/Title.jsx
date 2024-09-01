@@ -1,6 +1,7 @@
+// top title for the website
 const Title = () => {
     return (
-        <h1 className="App">Recipe Searching App</h1>
+        <h1 className="title">Recipe Searching App</h1>
     );
 }
 

@@ -1,0 +1,80 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to right, #ebdb03 0%, #f07400 100%);
+}
+
+.title {
+  font-size: 8rem;
+  letter-spacing: 0.1rem;
+  font-style: italic;
+  color: #04a7cf;
+  text-shadow: 0 0.2rem 5rem rgb(230, 226, 226);
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite;
+  margin: 4rem 0;
+}
+
+.search-form {
+  width: 70rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fac9e0;
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+  box-shadow: 1rem 1rem 1rem #5b6999;
+  position: relative;
+}
+
+.search-form input[type="text"] {
+  font-size: 1.6rem;
+  height: 3rem;
+  width: 60%;
+  border: none;
+  border-bottom: 0.1rem solid #ccc;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  color: #555;
+}
+
+.search-form button[type="submit"] {
+  width: 25%;
+  height: 3rem;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  background-color: #ff4800;
+  color: #fff;
+}
+
+.recipes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin: 6rem 0;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.8); /* Light glow */
+    color: #ff6f61; /* Retro Miami color */
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 105, 180, 1); /* Stronger glow */
+    color: #ff1493; /* Slightly different shade */
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 105, 180, 0.8); /* Light glow */
+    color: #ff6f61; /* Retro Miami color */
+  }
+}
