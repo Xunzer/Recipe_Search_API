@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(to right, #ebdb03 0%, #f07400 100%);
+  animation: gradientAnimation 15s ease infinite;
 }
 
 .title {
@@ -76,5 +77,23 @@
   100% {
     text-shadow: 0 0 5px rgba(255, 105, 180, 0.8); /* Light glow */
     color: #ff6f61; /* Retro Miami color */
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-image: linear-gradient(to right, #ebdb03 0%, #f07400 100%);
+  }
+  25% {
+    background-image: linear-gradient(to right, #f07400 0%, #ebdb03 100%);
+  }
+  50% {
+    background-image: linear-gradient(to right, #ebdb03 0%, #f07400 100%);
+  }
+  75% {
+    background-image: linear-gradient(to right, #f07400 0%, #ebdb03 100%);
+  }
+  100% {
+    background-image: linear-gradient(to right, #ebdb03 0%, #f07400 100%);
   }
 }
