@@ -64,18 +64,18 @@ function App() {
       <div className="App">
         <Title />
         <form className="search-form" onSubmit={getSearch}>
-          <input type="text" placeholder="What delicious recipe are you searching for today?" value={search} onChange={updateSearch}></input>
+          <input type="text" placeholder="What delicious recipe are you searching for today?" value={search} onChange={updateSearch} /> {/* invoke updateSearch() by onChange attribute so that we can retrieve input value (as opposed to button) */}
           <button type="submit" onMouseOver={buttonOver} onMouseOut={buttonOut}>Search!</button>
         </form>
         <div className="recipes">
-          {recipes.length > 0 && recipes.map(recipe => (
+          {recipes.length > 0 && recipes.map(recipe => (  // iterate over the array and map them into Recipe component that we want
               <Recipe
                 // pass the state data as prop to render actual item values for this component
                 key={crypto.randomUUID()} // generated as key attribute to prevent compile warning on browser (should be an unique one)
                 title={recipe.recipe.label} 
                 calories={recipe.recipe.calories} 
                 image={recipe.recipe.image}
-                ingredients={recipe.recipe.ingredients} // ingredient is an array 
+                ingredients={recipe.recipe.ingredients} // ingredients is an array 
               />
             ))
           }
